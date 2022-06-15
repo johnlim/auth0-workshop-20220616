@@ -6,5 +6,6 @@
     "universal_login": true,
     "revoke_refresh_token_grant": false,
     "disable_clickjack_protection_headers": false
-  }
+  },
+  "universal_login": {}
 }
