@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "script": "./Step-up MFA.js",
+  "name": "Step-up MFA",
+  "order": 1,
+  "stage": "login_success"
+}
