@@ -1,0 +1,5 @@
+{
+  "client_id": "grep (Test Application)",
+  "audience": "https://grepfood.com/api",
+  "scope": []
+}
