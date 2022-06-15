@@ -12,6 +12,7 @@
   "is_domain_connection": false,
   "enabled_clients": [
     "Default App",
-    "deploy-cli"
+    "deploy-cli",
+    "grepFood"
   ]
 }

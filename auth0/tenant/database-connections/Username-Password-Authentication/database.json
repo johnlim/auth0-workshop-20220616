@@ -16,6 +16,7 @@
   ],
   "enabled_clients": [
     "Default App",
-    "deploy-cli"
+    "deploy-cli",
+    "grepFood"
   ]
 }
