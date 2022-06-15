@@ -1,5 +1,5 @@
 {
   "domain": "auth0-workshop-20220616.au.auth0.com",
   "clientId": "ugO5FajRB4DoRrCHo1K1WDgMxg4bm7bw",
-  "audience": "YOUR_API_IDENTIFIER"
+  "audience": "https://grepfood.com/api"
 }
