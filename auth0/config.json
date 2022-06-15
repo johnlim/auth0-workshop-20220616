@@ -1,0 +1,10 @@
+{
+  "AUTH0_DOMAIN": "auth0-workshop-20220616.au.auth0.com",
+  "AUTH0_CLIENT_ID": "oZT1GAyVt65psfl12swkYPbBCY7rLvAt",
+  "AUTH0_CLIENT_SECRET": "",
+  "AUTH0_KEYWORD_REPLACE_MAPPINGS": { 
+    "AUTH0_TENANT_NAME": "auth0-workshop-20220616" 
+  },
+  "AUTH0_ALLOW_DELETE": false,
+  "AUTH0_EXCLUDED": []
+}
