@@ -60,7 +60,7 @@ export const ExternalApiComponent = () => {
       let token; 
       
       if(endpoint === "private-scoped") {
-        token = await getAccessTokenWithPopup();
+        token = await getAccessTokenWithPopup({scope: "place:orders"});
       }
       else {
         token = await getAccessTokenSilently();
