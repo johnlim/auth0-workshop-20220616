@@ -14,17 +14,36 @@
     "infinite_idle_token_lifetime": false,
     "rotation_type": "rotating"
   },
+  "allowed_clients": [],
+  "allowed_logout_urls": [
+    "http://localhost:3000"
+  ],
+  "callbacks": [
+    "http://localhost:3000"
+  ],
+  "native_social_login": {
+    "apple": {
+      "enabled": false
+    },
+    "facebook": {
+      "enabled": false
+    }
+  },
   "jwt_configuration": {
     "alg": "RS256",
     "lifetime_in_seconds": 36000,
     "secret_encoded": false
   },
+  "client_aliases": [],
   "token_endpoint_auth_method": "none",
   "app_type": "spa",
   "grant_types": [
     "authorization_code",
     "implicit",
     "refresh_token"
+  ],
+  "web_origins": [
+    "http://localhost:3000"
   ],
   "custom_login_page_on": true
 }
