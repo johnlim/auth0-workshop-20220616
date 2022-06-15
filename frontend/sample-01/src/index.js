@@ -23,6 +23,7 @@ const providerConfig = {
   ...(config.audience ? { audience: config.audience } : null),
   redirectUri: window.location.origin,
   onRedirectCallback,
+  cacheLocation: "localstorage"
 };
 
 ReactDOM.render(
