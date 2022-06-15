@@ -6,7 +6,7 @@ import { getConfig } from "../config";
 import Loading from "../components/Loading";
 
 export const ExternalApiComponent = () => {
-  const { apiOrigin = "http://localhost:3001", audience } = getConfig();
+  const { apiOrigin = "http://localhost:3010", audience } = getConfig(); //api server
 
   const [state, setState] = useState({
     showResult: false,
@@ -54,11 +54,19 @@ export const ExternalApiComponent = () => {
     await callApi();
   };
 
-  const callApi = async () => {
+  const callApi = async (endpoint) => {
     try {
-      const token = await getAccessTokenSilently();
+      
+      let token; 
+      
+      if(endpoint === "private-scoped") {
+        token = await getAccessTokenWithPopup();
+      }
+      else {
+        token = await getAccessTokenSilently();
+      }
 
-      const response = await fetch(`${apiOrigin}/api/external`, {
+      const response = await fetch(`${apiOrigin}/api/${endpoint}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -174,11 +182,19 @@ export const ExternalApiComponent = () => {
         <Button
           color="primary"
           className="mt-5"
-          onClick={callApi}
+          onClick={() => callApi("private")}
           disabled={!audience}
         >
-          Ping API
-        </Button>
+          Ping Private API
+        </Button>{' '}
+        <Button
+          color="primary"
+          className="mt-5"
+          onClick={() => callApi("private-scoped")}
+          disabled={!audience}
+        >
+          Ping Private Scoped API
+        </Button>{' '}
       </div>
 
       <div className="result-block-container">
