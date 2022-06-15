@@ -11,5 +11,7 @@
       "value": "place:orders",
       "description": "Authorised to  place orders"
     }
-  ]
+  ],
+  "enforce_policies": true,
+  "token_dialect": "access_token"
 }

@@ -1,0 +1,10 @@
+{
+  "name": "Admin",
+  "description": "Administrator Role",
+  "permissions": [
+    {
+      "permission_name": "place:orders",
+      "resource_server_identifier": "https://grepfood.com/api"
+    }
+  ]
+}
